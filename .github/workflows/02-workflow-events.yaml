@@ -1,6 +1,8 @@
 name: Workflow Events
 
-on: workflow_dispatch
+on: 
+  - push
+  - workflow_dispatch
 
 jobs:
   hello:
