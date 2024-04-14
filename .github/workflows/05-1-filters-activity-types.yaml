@@ -1,0 +1,15 @@
+name: 05 1 Filters Activity Types
+on:
+  pull_request: # the name of the event
+    types: [opened, synchronize] # specific type of event to trigger
+    branches: # which branch to trigger the workflow
+      - main
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: |
+          echo "Running whenever a PR is opened or synchronized AND base branch is main"
+

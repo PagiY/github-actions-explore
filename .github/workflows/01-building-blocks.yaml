@@ -1,11 +1,12 @@
 name: 01 - Building Blocks
 on: workflow_dispatch
 
+# we have two jobs called echo-hello and echo-goodbye
 jobs:
-  echo-hello:
-    runs-on: ubuntu-latest
+  echo-hello: # this is the job name
+    runs-on: ubuntu-latest # which environment to run
     steps:
-      - name: Say hello!
+      - name: Say hello! # step name
         run: echo "Hello, world"
   echo-goodbye:
     runs-on: ubuntu-latest
